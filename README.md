@@ -1,0 +1,4 @@
+ - php 7.0 CLI
+ - composer
+ - git
+ - node 8.0
