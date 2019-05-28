@@ -61,7 +61,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN wget -qO- https://deb.nodesource.com/setup_8.x | sudo -E bash -
 RUN apt-get install -y nodejs
 
-RUN mkdir -p /root/.npm
-RUN CHMOD -R 777 /root/.npm
-RUN mkdir -p /root/.composer
-RUN CHMOD -R 777 /root/.composer
+RUN mkdir -p /.npm
+RUN chmod -R 777 /.npm
+RUN mkdir -p /.composer
+RUN chmod -R 777 /.composer
