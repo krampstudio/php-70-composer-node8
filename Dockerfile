@@ -45,8 +45,7 @@ RUN docker-php-ext-install calendar && \
     docker-php-ext-install sockets && \
     docker-php-ext-install zip
 
-RUN docker-php-ext-enable apcu && \
-    docker-php-ext-enable redis && \
+RUN docker-php-ext-enable redis && \
     docker-php-ext-enable xdebug
 
 RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
